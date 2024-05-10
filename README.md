@@ -32,7 +32,8 @@ y=[3,6,2,7,1]
 sns.lineplot(x=x,y=y)
 plt.title('Line Plot')
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/51650fa8-d4f8-46b9-af1c-5108d80c27af)
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/20601ff6-8f56-4839-a243-82790914cdc0)
+
 
 ## 2. Multiline Plot
 ```python
@@ -45,7 +46,8 @@ sns.lineplot(x=x,y=y2)
 sns.lineplot(x=x,y=y3)
 plt.title('Multi Line Plot')
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/5b96252f-e94c-4859-a220-9f3654872f85)
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/2f3b27d3-1621-4845-acb8-2f038d59ede9)
+
 
 ## Too visualize Relationships
 ## 1. Barchart
@@ -54,7 +56,8 @@ plt.figure(figsize=(8,5))
 sns.barplot(x='Embarked',y='Fare',data=df,palette='rainbow')
 plt.title("Fare Of Passenger By Embarked Town")
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/6f923f2c-f9be-421a-8301-70eaa4fbb86a)
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/b895688a-e0c9-48e3-a247-17f9c6a8adf6)
+
 
 
 ## 2. Scatter Plot
@@ -63,8 +66,7 @@ sns.scatterplot(x="Age", y="Fare", data=df)
 plt.title('Scatterplot of Age vs Fare')
 plt.show()
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/3e2eadc6-8bbe-42cd-bbc7-784c2cb705e8)
-
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/dc977f22-e660-4448-85d0-d60ad8921e10)
 
 ## 3.Bubble Chart
 ```python
@@ -72,21 +74,21 @@ sns.scatterplot(x="Age", y="Fare", size="Pclass", data=df, sizes=(30, 200))
 plt.title('Bubble Chart of Age vs Fare, Size by Passenger Class')
 plt.show()
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/379c09d0-a971-49c4-a2bf-9615ef5b171a)
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/b81b27d2-fea5-47bd-bea6-e5c6470e2838)
 
 ## To capture distributions
 ## 1.Histogram
 ```python
 sns.histplot(data=df,x="Pclass",hue="Survived",kde=True)
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/08b8857b-caeb-477f-8829-2689544a0b5b)
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/0e593cf8-49dd-4a2c-b786-90aecbc7a15f)
 
 ## 2.Box Plot
 ```python
 sns.boxplot(x='Pclass',y='Age',data=df,palette='rainbow')
 plt.title("Age By Passenger Class")
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/9156f13d-f1a8-469c-93f5-4920eb1bf382)
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/e3609384-0a78-4e12-a34c-b6302c7e6ce7)
 
 ## 3. Violin plot
 ```python
@@ -94,7 +96,7 @@ sns.violinplot(x="Pclass", y="Fare", data=df)
 plt.title('Violin Plot of Fare by Passenger Class')
 plt.show()
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/9b8cc51d-d63b-433a-83eb-1f34326baa3f)
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/03737ad1-14b0-495b-a90d-c91bef7974a5)
 
 ## 4. Density plot
 ```python
@@ -102,8 +104,7 @@ sns.kdeplot(data=df['Age'], shade=True)
 plt.title('Density Plot of Passenger Ages')
 plt.show()
 ```
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/98ee1aa0-6f30-4984-80fe-6cdc1eccb936)
-
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/9b504dd8-05ef-45b0-9512-4788cf787507)
 
 ## 5. Heat map
 numeric_df = df.select_dtypes(include=['float64', 'int64'])
@@ -111,8 +112,7 @@ corr_matrix = numeric_df.corr()
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 plt.title('Heatmap of Titanic Dataset')
 plt.show()
-
-![image](https://github.com/varshxnx/EXNO-6-DS/assets/122253525/873b5f17-adf3-4707-8cc8-43b40eed2e47)
+![image](https://github.com/svarsha220/EXNO-6-DS/assets/127709117/1da40f88-8bd7-448d-a70d-6fbde85040b2)
 
 # Result:
  Thus, the Data Visualization using seaborn python library for the given data is implemented successfully.
